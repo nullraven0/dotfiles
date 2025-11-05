@@ -1,0 +1,99 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-latest"
+    },
+    "play_sound_when_agent_done": true
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "vim_mode": true,
+  "ui_font_size": 18,
+  "buffer_font_size": 16,
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_font_features": {
+    "liga": true
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Ayu Mirage"
+  },
+  "hard_tabs": false,
+  "auto_save": "on_focus_change",
+  "inlay_hints": {
+    "enabled": true
+  },
+  "format_on_save": "on",
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "classAttributes": ["class", "className", "classList", "ngClass"],
+        "experimental": {
+          "classRegex": ["class:\\s*['\"`]([^'\"`]*)['\"`]"]
+        }
+      }
+    }
+  },
+  "languages": {
+    "Python": {
+      "tab_size": 4,
+      "language_servers": ["ruff", "pyright"],
+      "formatter": "language_server"
+    },
+    "JavaScript": {
+      "tab_size": 2,
+      "language_servers": ["biome"],
+      "formatter": "language_server"
+    },
+    "TypeScript": {
+      "tab_size": 2,
+      "language_servers": ["biome"],
+      "formatter": "language_server"
+    },
+    "JSX": {
+      "tab_size": 2,
+      "language_servers": ["biome"],
+      "formatter": "language_server"
+    },
+    "TSX": {
+      "tab_size": 2,
+      "language_servers": ["biome"],
+      "formatter": "language_server"
+    },
+    "Svelte": {
+      "tab_size": 2,
+      "language_servers": [
+        "svelte-language-server",
+        "tailwindcss-language-server"
+      ],
+      "formatter": "language_server"
+    },
+    "HTML": {
+      "tab_size": 2,
+      "language_servers": [
+        "vscode-html-language-server",
+        "tailwindcss-language-server"
+      ]
+    },
+    "CSS": {
+      "tab_size": 2,
+      "language_servers": [
+        "vscode-css-language-server",
+        "tailwindcss-language-server"
+      ]
+    }
+  }
+}
